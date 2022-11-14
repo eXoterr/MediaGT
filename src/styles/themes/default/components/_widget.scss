@@ -1,0 +1,69 @@
+.widget{
+    background: $primary;
+    padding: .5rem 1rem;
+    color: $text-accent;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.widget:focus{
+    outline: 3px solid $text-accent;
+}
+
+.widget__item{
+    display: block;
+    border: 5px solid $primary;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: none;
+    color: $text-accent;
+    height: 100%;
+    background: url("https://via.placeholder.com/300");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+
+    
+
+    // &:hover{
+    //     & h3, p{
+    //         opacity: 1;
+    //     }
+    // }
+    
+    
+}
+
+.widget__data h3, .widget__data p{
+    font-size: 1rem;
+    text-overflow: ellipsis;
+    overflow: hidden;  
+    max-height: min-content;  
+    white-space: nowrap;
+    // opacity: 0;
+    // transition: all .5s;
+}
+
+.widget_poster{
+        height: 300px;
+        width: 200px;
+    }
+.widget_landscape{
+        height: 200px;
+        width: 300px;
+    }
+
+.focused{
+    outline: 5px solid $text-accent;
+}
